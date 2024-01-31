@@ -1,5 +1,1 @@
-提出用フォルダ
-
-insertMany.js
-deleteMany.js
-note.js
+第15回レポート提出用フォルダ
