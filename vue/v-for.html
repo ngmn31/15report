@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>v-for sample</title>
+        <title>第15回レポート課題</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -16,12 +16,12 @@
             }
             .aquamarine {
                 font-weight: plain;
-                color: aquamarine;
+                color: rgb(0, 136, 41);
             }
         </style>
 
 
-        <h1 class="bg-secondary text-blue display-4 px-2">Vue3</h1>
+        <h1 class="bg-secondary text-white display-4 px-2">第１５回レポート課題</h1>
 
         <div id="app" class="container">
             <p>{{ message }}</p>
@@ -58,15 +58,15 @@
             const appdata = {
                 data() {
                     return{
-                        message : "テーブル表示",
+                        message : "notes.jsを通してmongoDBから要素を取得し表示する",
                         items:[]
                     }
                 },
                 mounted(){
-                    const backendEndpoint = "localhost:30085/notes.js";
+                    const backendEndpoint = "http://localhost:30085/notes";
 
                     axios.get(backendEndpoint)
-                        .then(Response => {
+                        .then(response => {
                             this.items = response.data;
                             console.log(this.items)
                         })

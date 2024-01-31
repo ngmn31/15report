@@ -1,5 +1,5 @@
 提出用フォルダ
 
-insertMany.jsのパス:myapp/node_modules/
-deleteMany.jsのパス:myapp/node_modules/
+insertMany.js
+deleteMany.js
 note.js
